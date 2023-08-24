@@ -73,7 +73,11 @@
 
             const trapezium = document.getElementById("trap").onpointerdown = () => boob.play ()
     
-        
+        document.body.onpointerdown = () => {
+  if (buzz.audioCtx.state != `running`) {
+    buzz.audioCtx.resume ()
+  }
+}
         </script>
     </body>
     

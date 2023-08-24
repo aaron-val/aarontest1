@@ -54,22 +54,22 @@
             const boob = new buzz.sound ("sound/5.wav")
             
             const triangle = document.getElementById("tria")
-            triangle.onpointerover = () => {
+            triangle.onpointerdown = () => {
                 yeet.play ()
                 triangle.src = 'img/cir.png' }
-            triangle.onpointerout = () => triangle.src = 'img/tri.png'
+            triangle.onpointerup = () => triangle.src = 'img/tri.png'
            
             const square = document.getElementById("squa")
-            square.onpointerover = () => {
+            square.onpointerdown = () => {
                 boot.play ()
                 square.src = 'img/tri.png' }
-            square.onpointerout = () => square.src = 'img/squ.png'
+            square.onpointerup = () => square.src = 'img/squ.png'
            
             const hexagon = document.getElementById("hexa")
-            hexagon.onpointerover = () => {
+            hexagon.onpointerdown = () => {
                 yer.play ()
                 hexagon.src = 'img/rec.png' }
-            hexagon.onpointerout = () => hexagon.src = 'img/hex.png'
+            hexagon.onpointerup = () => hexagon.src = 'img/hex.png'
 
             const trapezium = document.getElementById("trap").onpointerdown = () => boob.play ()
     

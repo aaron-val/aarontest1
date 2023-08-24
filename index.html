@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="circ" src="img/cir.png" height="200" width="200"/></div>
+                
+            <div class="image-container"><img id="tria" src="img/tri.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="squa" src="img/squ.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="hexa" src="img/hex.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="trap" src="img/rec.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.2/buzz.min.js"></script>
+
+        <script>
+            const boom = new buzz.sound ("sound/1.wav")
+            document.getElementById("circ").onpointerdown = () => {
+                console.log("hello everyone!")
+                boom.play ()
+            }
+        </script>
+       
+       <script>
+            const yeet = new buzz.sound ("sound/2.wav")
+            const boot = new buzz.sound ("sound/3.wav")
+            const yer = new buzz.sound ("sound/4.wav")
+            const boob = new buzz.sound ("sound/5.wav")
+            
+            const triangle = document.getElementById("tria")
+            triangle.onpointerover = () => {
+                yeet.play ()
+                triangle.src = 'img/cir.png' }
+            triangle.onpointerout = () => triangle.src = 'img/tri.png'
+           
+            const square = document.getElementById("squa")
+            square.onpointerover = () => {
+                boot.play ()
+                square.src = 'img/tri.png' }
+            square.onpointerout = () => square.src = 'img/squ.png'
+           
+            const hexagon = document.getElementById("hexa")
+            hexagon.onpointerover = () => {
+                yer.play ()
+                hexagon.src = 'img/rec.png' }
+            hexagon.onpointerout = () => hexagon.src = 'img/hex.png'
+
+            const trapezium = document.getElementById("trap").onpointerdown = () => boob.play ()
+    
+        
+        </script>
+    </body>
+    
+</html>
